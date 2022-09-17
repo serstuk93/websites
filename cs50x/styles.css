@@ -1,3 +1,5 @@
+/*wwww.w3schools.com and cs50x presentation used as source*/
+
 *{
     outline: 0px solid red;
 }
@@ -7,15 +9,37 @@
 }
 
 header{
-    width: 100%;
+    width: 100%; 
+    max-width: 100%;
     background-image:url("earth-g62e39aa17_1920.jpg");
-    background-size: cover;
+
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; 
     color: whitesmoke;
     min-height: 500px;
+    transition: 2s;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes mymove {
+    from {
+        background-position: 0px -200px;
+    }
+
+    to {
+        background-position: 0px 0px;
+    }
+}
+
+/*
+header:hover{
+    background-size: 110% auto;
+    transition: 2s;
+    
+}
+*/
 .container{
     color: whitesmoke;
     position: relative;
@@ -32,7 +56,7 @@ body{
     text-align: start;
     font-style: italic;
     font-weight:normal;
-    padding-left: 20px;
+    padding-left: 30px;
     color: rgba(240, 248, 255, 0.658);
 }
 
@@ -72,4 +96,32 @@ a{
 
 .list-group, .list-group-item{
     background-color: rgba(255, 255, 255, 0.486);;
+}
+
+.card{
+    color: black;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+    
+}
+
+.carousel-item:hover {
+    transform: scale(1.2);
+}
+
+#img-zoom:hover{
+    opacity: 95%;
+}
+
+@keyframes rotatelogo {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(3.142rad);
+    }
 }

@@ -19,17 +19,24 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
 
+  <script src = "javascript.js" >  </script>
+  
+
 
 
 </head>
 
+
+
 <body>
-  <header>
+
+  
+  <header onmouseover="window.setInterval(zoom, 500)">
     <div class="container">
       <div class="row">
         <nav id="nvbr" class="navbar navbar-dark navbar-expand-lg bg-dark text-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img
+            <a onclick="rotatefunction()" id="nvbr2"class="navbar-brand" href="#"><img
                 src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"
                 height="24" class="d-inline-block align-text-top mx-2">
               Faces of Nature</a>
@@ -92,10 +99,15 @@
 
       </div>
       </div>
+      
       <div class="container " >
-        <p style="text-align:left">The word "animal" comes from the Latin animalis, meaning 'having breath', 'having soul' or 'living
+        <div class="container">
+
+        
+        <p style="text-align:start">The word "animal" comes from the Latin animalis, meaning 'having breath', 'having soul' or 'living
           being.</p>
       </div>
+      
     
     <div class="container">
       <h2>Three-domain system</h2>
@@ -162,13 +174,13 @@
         </div>
         <div class="carousel-inner rounded-2">
           <div class="carousel-item active">
-            <img src="cardinal-gd53e7dabd_1920.jpg" class="d-block w-100 " alt="...">
+            <img id="cimg1" onmouseover="enlargeitem()" src="cardinal-gd53e7dabd_1920.jpg" class="d-block w-100 " alt="...">
           </div>
           <div class="carousel-item">
-            <img src="cranes-gaf302e973_1920.jpg" class="d-block w-100 " alt="...">
+            <img id="cimg2"src="cranes-gaf302e973_1920.jpg" class="d-block w-100 " alt="...">
           </div>
           <div class="carousel-item">
-            <img src="elephant-gcdaa4d1ae_1920.jpg" class="d-block w-100" alt="...">
+            <img id="cimg3 "src="elephant-gcdaa4d1ae_1920.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -184,7 +196,7 @@
       </div>
 
     </div>
-
+    </div>
   </main>
 
   <footer>
@@ -208,6 +220,8 @@
   
   </footer>
 
+ 
+  
 </body>
 
 </html>
