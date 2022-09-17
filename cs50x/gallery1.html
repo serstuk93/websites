@@ -12,27 +12,20 @@
   <link rel="icon" type="image/x-icon" href="earth-g62e39aa17_1920.jpg">
   <link href="styles.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-    crossorigin="anonymous"></script>
-
 
 
 </head>
 
 <body>
-  <header>
+  <header onmouseover="window.setInterval(zoom, 500)">
     <div class="container">
       <div class="row">
         <nav id="nvbr" class="navbar navbar-dark navbar-expand-lg bg-dark text-light fixed-top">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img
-                src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"
-                height="24" class="d-inline-block align-text-top mx-2">
+            <a onclick="rotatefunction()" id="nvbr2" class="navbar-brand" href="#"><img src="icon-modified.png"
+                alt="Logo" width="30" height="30" class="d-inline-block align-text-top mx-2">
               Faces of Nature</a>
+
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
               aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -63,7 +56,6 @@
                     <li><a class="dropdown-item" href="gallery2.html">Nature</a></li>
                   </ul>
                 </li>
-
               </ul>
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -73,19 +65,14 @@
           </div>
         </nav>
       </div>
-
     </div>
 
 
     <div class="container py-5">
-      <h1>Faces of Nature</h1>
-      <h2>Welcome to the site dedicated to presenting various aspects of nature</h2>
+      <h1 id="starttext0">Faces of Nature</h1>
+      <h2 id="starttext1">Welcome to the site dedicated to presenting various aspects of nature</h2>
     </div>
-
-
-
   </header>
-
 
 
   <main>
@@ -96,6 +83,7 @@
         </h2>
 
       </div>
+      </div>  
 
       <div class="container">
         <div class="container">
@@ -177,6 +165,12 @@
   
   
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  
+  <script src="javascript.js">  </script>
 
 </body>
 

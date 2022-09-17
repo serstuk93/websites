@@ -1,9 +1,9 @@
-/*wwww.w3schools.com and cs50x presentation used as source*/
+/*wwww.w3schools.com, bootstrap libraries and cs50x presentations used as resource/inspiration */
 
-*{
+/**{
     outline: 0px solid red;
 }
-
+ */
 #nvbr{
     color: whitesmoke;
 }
@@ -12,15 +12,12 @@ header{
     width: 100%; 
     max-width: 100%;
     background-image:url("earth-g62e39aa17_1920.jpg");
-
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center; 
     color: whitesmoke;
-    min-height: 500px;
+    min-height: 450px;
     transition: 2s;
     animation: mymove 5s;
     animation-fill-mode: forwards;
+    position: relative;
 }
 
 @keyframes mymove {
@@ -33,13 +30,6 @@ header{
     }
 }
 
-/*
-header:hover{
-    background-size: 110% auto;
-    transition: 2s;
-    
-}
-*/
 .container{
     color: whitesmoke;
     position: relative;
@@ -122,6 +112,35 @@ a{
     }
 
     to {
-        transform: rotate(3.142rad);
+        transform: rotate(360deg);
+    }
+}
+#starttext0 {
+    font-weight: bolder;
+    opacity: 0%;
+    animation: text_movement 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+#starttext1 {
+    opacity: 0%;
+    animation: text_movement 4s ;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out; 
+
+}
+
+@keyframes text_movement{
+    from{
+       
+        transform:translate(50%,100%);
+        opacity:0%;
+    }
+    to{
+        
+        transform: translate(0%, 100%);
+        opacity:100%;
     }
 }
