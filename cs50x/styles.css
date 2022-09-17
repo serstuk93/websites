@@ -4,14 +4,14 @@
     outline: 0px solid red;
 }
  */
-#nvbr{
+#nvbr {
     color: whitesmoke;
 }
 
-header{
-    width: 100%; 
+header {
+    width: 100%;
     max-width: 100%;
-    background-image:url("earth-g62e39aa17_1920.jpg");
+    background-image: url("earth-g62e39aa17_1920.jpg");
     color: whitesmoke;
     min-height: 450px;
     transition: 2s;
@@ -30,79 +30,84 @@ header{
     }
 }
 
-.container{
+.container {
     color: whitesmoke;
     position: relative;
     text-align: center;
 }
-body{
+
+body {
     background-color: black;
     padding-top: 50px;
 }
 
-#ftr{
+#ftr {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: medium;
     text-align: start;
     font-style: italic;
-    font-weight:normal;
+    font-weight: normal;
     padding-left: 30px;
     color: rgba(240, 248, 255, 0.658);
 }
 
-#rfr{
-        color: rgba(240, 248, 255, 0.658);
-        text-align: start;
-        text-decoration: underline;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: large;
-        font-weight: bold;
-        padding-top: 10px ;
-        padding-left: 10px;
+#rfr {
+    color: rgba(240, 248, 255, 0.658);
+    text-align: start;
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 
-#refer:hover{
+#refer:hover {
     text-decoration: overline;
     color: rgba(240, 248, 255, 0.658);
 }
+
 #refer {
     font-size: small;
     color: rgba(240, 248, 255, 0.658);
     text-align: center;
 }
 
-a:hover{
+a:hover {
     color: rgba(240, 248, 255, 0.767);
 }
 
-a{
+a {
     color: rgba(240, 248, 255, 0.507);
 }
 
-.form-control{
+.form-control {
     background-color: rgba(255, 255, 255, 0.76);
 }
 
-.list-group, .list-group-item{
-    background-color: rgba(255, 255, 255, 0.486);;
+.list-group,
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.486);
+    ;
 }
 
-.card{
+.card {
     color: black;
     transition: 0.3s;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.02);
     transition: 0.3s;
-    
+
 }
 
 .carousel-item:hover {
     transform: scale(1.2);
 }
 
-#img-zoom:hover{
+#img-zoom:hover {
     opacity: 95%;
 }
 
@@ -115,6 +120,7 @@ a{
         transform: rotate(360deg);
     }
 }
+
 #starttext0 {
     font-weight: bolder;
     opacity: 0%;
@@ -125,22 +131,23 @@ a{
 
 #starttext1 {
     opacity: 0%;
-    animation: text_movement 4s ;
+    animation: text_movement 4s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-    animation-timing-function:ease-in-out; 
+    animation-timing-function: ease-in-out;
 
 }
 
-@keyframes text_movement{
-    from{
-       
-        transform:translate(50%,100%);
-        opacity:0%;
+@keyframes text_movement {
+    from {
+
+        transform: translate(50%, 100%);
+        opacity: 0%;
     }
-    to{
-        
+
+    to {
+
         transform: translate(0%, 100%);
-        opacity:100%;
+        opacity: 100%;
     }
 }
