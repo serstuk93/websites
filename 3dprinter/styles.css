@@ -1,0 +1,144 @@
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    max-width: 200px;
+}
+html{
+        background-size: cover;
+        background-repeat: no-repeat;
+
+       
+}
+body
+{
+    background-attachment: fixed;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(164deg, rgba(0, 0, 0, 1) 0%, rgba(129, 129, 129, 1) 18%, rgba(59, 59, 59, 1) 41%, rgba(18, 18, 19, 1) 74%, rgba(34, 34, 34, 1) 100%);
+    min-width: 200px; 
+   
+}
+
+video {
+    width: 100%;
+    height: auto;
+}   
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#container{
+    background-color: transparent;
+}
+
+  /* * {
+    outline: 1px solid red;
+}  */
+ 
+.nav-link{
+    color: aliceblue;
+}
+
+.gtc0 {
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #ffffff, #5c5c5c);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.gtc{
+        background-color: #ffffff;
+        background-image: linear-gradient(180deg, #ffffff, #5c5c5c);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+
+}
+.gtc:hover {      
+      -webkit-text-fill-color: black;
+    background-image: linear-gradient(180deg, #ffffff, #5c5c5c);
+    background-size: 100%;
+    color: #000000; 
+    font-size: 15px;
+
+}
+
+#active-nav{
+    border-radius:  5px;
+    background-color: #707058;
+    background-image: linear-gradient(180deg, #1a1a1a, #000000);
+    background-size: 100%;
+    color: linear-gradient(180deg, #d6ee00, #08161d);
+
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    -webkit-text-fill-color: whitesmoke;
+    background-image: linear-gradient(180deg, #4b4747, #08161d);
+    background-color: rgb(33, 30, 36);
+
+}
+
+
+
+#active-nav:hover {
+    border-radius: 15px;
+    background-color: silver;
+    color: rgb(148, 148, 148);
+    transition: background-color 2s;
+    transition: border-radius 1s;
+}
+
+/*.row{
+    background-color: transparent;
+    color: red;
+} */
+
+#s-runner1{
+    color: transparent;
+    position: relative;
+    animation: mymove 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+#s-runner2 {
+    color: transparent;
+    position: relative;
+    animation: mymove 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 4s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes mymove {
+    0% {
+        right: -500px;
+        color: transparent;
+    }
+
+    100% {
+        right: 000px;
+        color: aliceblue;
+    }
+}
+
+#firstrow{
+    border:  2px;
+    border-color: red   ;
+}
